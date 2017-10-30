@@ -1,0 +1,105 @@
+Body {
+  font-family: 'Manuale', serif;
+}
+header {
+  text-align: left;
+  background: linear-gradient(90deg, #d4eece, #55b3d0, #1e7eb7),
+    url(./images/header-bg.jpg) no-repeat;
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: 70% -7px;
+  color: grey;
+  text-transform: uppercase;
+  height: 280px;
+}
+.App-title {
+  font-family: 'Faster One', cursive;
+  padding: .60em 0 0 .60em;
+  margin: 0;
+}
+.navHeader {
+  border-radius: 0;
+}
+.App {
+  width: 100%;
+  max-width: 1400px;
+  margin: 2.0em auto;
+  background: #fcfcfc;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 26px rgba(0, 0, 0, .23);
+  box-shadow: 0 0 56px rgba(0, 0, 0, .23);
+}
+.mainWrapper {
+  padding: .66em;
+  padding-bottom: 1.33em;
+}
+.musicListWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 0;
+  margin: 0;
+}
+.musicEntry {
+  display: block;
+  -webkit-box-shadow: 0 0 26px rgba(0, 0, 0, .23);
+  box-shadow: 0 0 26px rgba(0, 0, 0, .23);
+  border-radius: 4px;
+  padding: 10px;
+  width: 100%;
+  margin: 10px;
+}
+
+.artist-song-wrapper {
+  display: block;
+  margin: 0 0 35px 0;
+}
+.artist {
+  font-size: 1.3em;
+  padding: 0;
+  margin: 0;
+}
+.song {
+  font-style: italic;
+}
+.album {
+  font-weight: bold;
+}
+.saveForm Button {
+  margin-right: 10px;
+}
+.favoritesWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.newEntryInputText {
+  margin-bottom: 10px;
+}
+
+
+@media (min-width: 768px) {
+  header {
+    height: 280px;
+    background-position: 0 -95px;
+  }
+  .App-title {
+    padding: 1.5em 0 0 1.5em;
+    font-size: 3.2em;
+    word-spacing: 18px;
+  }
+}
+
+@media (min-width: 1068px) {
+  header {
+    height: 380px;
+  }
+  .App-title {
+    padding: 1.7em 0 0 1.7em;
+    font-size: 4.0em;
+  }
+  .musicEntry {
+    max-width: 23em;
+  }
+}
